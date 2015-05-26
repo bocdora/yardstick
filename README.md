@@ -4,8 +4,8 @@ Yardstick is a framework for writing benchmarks. Specifically it helps with writ
 
 The framework comes with a default set of probes that collect various metrics during benchmark execution. Probes can be turned on or off in configuration. You can use a probe  for measuring throughput and latency, or a probe that gathers `vmstat` statistics, etc... At the end of benchmark execution, Yardstick automatically produces files with probe points.
 
-### GridGain Benchmarks On Yardstick
-See <a href="https://github.com/gridgain/yardstick-gridgain" target="_blank">Yardstick GridGain Benchmarks</a> as an example of Yardstick framework usage.
+### Apache Ignite Benchmarks On Yardstick
+See <a href="https://github.com/yardstick-benchmarks/yardstick-ignite" target="_blank">Yardstick Apache Ignite Benchmarks</a> as an example of Yardstick framework usage.
 
 ## Screenshots
 ![Generated Graph](http://www.gridgain.com/images/yardstick/yardstick-compound1.png)
@@ -30,7 +30,7 @@ It is as simple as this. Yardstick will measure throughput, latency, and other m
 ## Examples
 You can find Yardstick benchmark examples in
 * `org.yardstickframework.examples` package
-* [Yardstick GridGain Benchmark Repository](https://github.com/gridgain/yardstick-gridgain)
+* [Yardstick Apache Ignite Benchmark Repository](https://github.com/yardstick-benchmarks/yardstick-ignite)
 
 ## Running Yardstick Benchmarks
 The easiest way to run benchmarks is by executing `bin/benchmark-run-all.sh` script which will automatically start benchmark driver and remote servers base based on the properties file passed in (`config/benchmark.properties` used by default):
@@ -211,7 +211,7 @@ The easiest way to get started with Yardstick in your project is to use Maven de
 ```
 
 Yardstick is shipped with scripts that run servers and drivers, these scripts can be used for your benchmarks. In order to have them, just unzip `yardstick-resources.zip` maven artifact. Also this can be done by copying and pasting the following code snippet to your benchmark project POM file (see how it's done in 
-[Yardstick GridGain](https://github.com/gridgain/yardstick-gridgain)).
+[Yardstick Apache Ignite](https://github.com/yardstick-benchmarks/yardstick-ignite)).
 
 ```xml
 <build>
@@ -245,7 +245,7 @@ Yardstick is shipped with scripts that run servers and drivers, these scripts ca
 ```
 
 ## Issues
-Use GitHub [issues](https://github.com/gridgain/yardstick/issues) to file bugs.
+Use GitHub [issues](https://github.com/yardstick-benchmarks/yardstick-ignite/issues) to file bugs.
 
 ## License
 Yardstick is available under [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0.html) Open Source license.
